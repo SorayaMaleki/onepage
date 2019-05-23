@@ -44,6 +44,8 @@ a.color-btn:hover, form.customform button.color-btn:hover {
 	opacity: 0.5;
 	position: relative;
 	top: 2px;
+	text-align: right;
+
 }
 #topbar p strong {
 	font-weight: 600;
@@ -79,6 +81,7 @@ p.logo {
 	position: relative;
 	text-transform: uppercase;
 	top: 0.625em;
+	text-align: right;
 }
 p.logo strong {
 	font-weight: 700;
