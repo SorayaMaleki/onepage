@@ -4,6 +4,14 @@
  * Copyright 2018, Vision Design - graphic zoo
  * Free to use under the MIT license.
 */
+@font-face {
+  font-family: 'iran-sans';
+  src: url(../font/IRANSans.woff);
+  src: url(../font/IRANSans.eot?#iefix) format("embedded-opentype"),
+  url(../font/IRANSans.woff) format("woff"), url(../font/IRANSans.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal
+}
 * {
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -13,7 +21,7 @@
 body {
   background:none repeat scroll 0 0 #eeeeee;
   font-size:16px;
-  font-family:"Open Sans",Arial,sans-serif;
+  font-family:"iran-sans";
   color:#444;
 }
 h1,h2,h3,h4,h5,h6 {
