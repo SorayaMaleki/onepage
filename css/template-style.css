@@ -16,18 +16,19 @@ a.white-btn:hover {
 	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
 }
 a.color-btn, form.customform button.color-btn {
-	background: none;
-	border: 1px solid #001925;
-	border-radius: 3px;
-	color: #001925;
-	display: block;
-	font-size: 0.85em;
-	padding: 0.625em 1.25em;
-	transition: all 0.20s linear 0s;
-	-o-transition: all 0.20s linear 0s;
-	-ms-transition: all 0.20s linear 0s;
-	-moz-transition: all 0.20s linear 0s;
-	-webkit-transition: all 0.20s linear 0s;
+    background: #6f960a;
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    font-size: 0.85em;
+    padding: 0.625em 1.25em;
+    transition: all 0.20s linear 0s;
+    -o-transition: all 0.20s linear 0s;
+    -ms-transition: all 0.20s linear 0s;
+    -moz-transition: all 0.20s linear 0s;
+    -webkit-transition: all 0.20s linear 0s;
+    max-width: 150px;
+    margin: 0 auto;
 }
 a.color-btn:hover, form.customform button.color-btn:hover {
 	border: 1px solid #92c500;
@@ -129,11 +130,13 @@ p.logo strong {
 	color: #fff;
 	display: inline-block;
 	font-size: 2em;
-	font-weight: 300;
+	font-weight: 900;
 	margin: 1px 0;
 	max-width: 600px;
 	padding: 10px 20px;
 	width: 100%;
+    text-align: center;
+    direction: rtl;
 }
 #carousel .text p {
 	background: none repeat scroll 0 0 #00283a;
@@ -141,6 +144,8 @@ p.logo strong {
 	max-width: 600px;
 	padding: 10px 20px;
 	width: 100%;
+    direction: rtl;
+    text-align: center;
 }
 #carousel .owl-dots {
 	background: none repeat scroll 0 0 rgba(0, 40, 58, 0.53);
@@ -210,6 +215,8 @@ p.logo strong {
 #about-us {
 	background: none repeat scroll 0 0 #00283a;
 	clear: both;
+    text-align: right;
+    direction: rtl;
 }
 #about-us:after {
 	clear: both;
@@ -220,7 +227,7 @@ p.logo strong {
 	visibility: hidden;
 }
 #about-us article {
-	padding: 4em;
+	padding:6em 4em;
 }
 article h2 {
 	font-size: 4em;
@@ -246,6 +253,7 @@ article p, article li {
 	color: #fff;
 	font-size: 0.85em;
 	opacity: 0.7;
+    text-align: justify;
 }
 article ul {
 	padding: 1.25em 0;
@@ -274,17 +282,24 @@ article ul li:before {
 	border-radius: 100px;
 	color: #92c500;
 	display: block;
-	float: left;
+	float:right;
 	font-size: 1.6em;
-	height: 60px;
-	line-height: 60px;
-	margin-right: 0.625em;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 0.4em;
 	text-align: center;
-	width: 60px;
+	width: 35px;
+
 }
 .about-us-icons {
 	display: block;
 	margin-top: 2em;
+}
+.about-us-icons>div{
+    min-height: 100px;
+    color: #616161;
+    font-size: .8em;
+    padding: 5px;
 }
 h2.section-title:after {
 	background: #dedede none repeat scroll 0 0;
@@ -373,37 +388,46 @@ a.tab-label:hover, a.tab-label.active-btn {
 #services {
 	background: #6f9600 none repeat scroll 0 0;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-	padding: 6em 2em;
+	padding: 3em 2em;
 }
 #services h2 {
 	color: #fff;
-	margin: 0 0 1.25em;
+	margin: 0 0 .25em;
+}
+#services .margin>div{
+    min-height: 200px;
 }
 #services h2.section-title:after {
 	background: #fff none repeat scroll 0 0;
 }
 #services i {
-	background: none repeat scroll 0 0 #fff;
+	border:1px dotted #fff;
 	border-radius: 80px;
-	color: #6f9600;
-	display: block;
-	float: left;
-	font-size: 1.8em;
-	height: 80px;
-	line-height: 80px;
-	margin-right: 0.625em;
+	color: #fff;
+	display:inline-block;
+	/*float: right;*/
+	font-size: .8em;
+	height: 20px;
+	line-height: 20px;
 	text-align: center;
-	width: 80px;
+	width: 20px;
+    margin: 0 auto;
 }
 .service-text {
 	display: table;
 	position: relative;
+    text-align: right;
+    padding-right: 10px;
+    direction: rtl;
 }
 #services h3 {
-	color: #fff;
-	font-size: 1em;
-	font-weight: 700;
-	text-transform: uppercase;
+    color: #92c500;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background:#06283ae6;
+    padding: 7px 0;
 }
 #services p {
 	color: #fff;
@@ -467,11 +491,15 @@ form.customform button.color-btn {
 	margin: 0 0 1.25em;
 }
 #contact h3 {
-	color: #92c500;
-	font-size: 1em;
-	font-weight: 700;
-	margin: 0 0 0.625em;
-	text-transform: uppercase;
+    color: #92c500;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 0 0.625em;
+    text-transform: uppercase;
+    text-align: center;
+    background: #06283ae6;
+    border-radius: 4px;
+    padding: 10px;
 }
 #contact p {
 	font-size: 0.85em;
