@@ -421,13 +421,14 @@ a.tab-label:hover, a.tab-label.active-btn {
     direction: rtl;
 }
 #services h3 {
-    color: #92c500;
+    color: #fff;
     font-size: 1em;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     background:#06283ae6;
     padding: 7px 0;
+    border-radius: 4px;
 }
 #services p {
 	color: #fff;
