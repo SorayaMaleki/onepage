@@ -499,12 +499,19 @@ form.customform button.color-btn {
 }
 footer {
 	background: none repeat scroll 0 0 #00283a;
-	padding: 3.5em 0;
+	padding: 2em 0;
     direction: rtl;
 }
 footer p, footer a:visited, footer a, footer a:hover {
 	color: #6c7c84;
 	font-size: 0.8em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+footer a{
+    color:#92c500!important; ;
 }
 @media screen and (max-width: 768px) {
   .top-nav li a {
