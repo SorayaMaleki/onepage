@@ -311,7 +311,7 @@ h2.section-title:after {
 	width: 100px;
 }
 h2.section-title {
-	color: #dedede;
+	color: #00283a;
 	font-size: 3.8em;
 	font-weight: 700;
 	letter-spacing: -1px;
@@ -472,6 +472,7 @@ a.tab-label:hover, a.tab-label.active-btn {
 	border-top: 1px solid #e0e0e0;
 	height: 130px;
 	padding: 0.625em 1.25em;
+	text-align: right;
 }
 .news-text p {
 	color: #777;
