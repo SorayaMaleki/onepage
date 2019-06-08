@@ -81,11 +81,11 @@ p.logo {
 	font-weight: 300;
 	position: relative;
 	text-transform: uppercase;
-	top: 0.625em;
+	top: 12px;
 	text-align: right;
 }
-p.logo strong {
-	font-weight: 700;
+p.logo img {
+	width: 150px;
 }
 .top-nav li a {
 	border-top: 2px solid #00283a;
@@ -100,6 +100,9 @@ p.logo strong {
 	-moz-transition: all 0.20s linear 0s;
 	-webkit-transition: all 0.20s linear 0s;
 }
+.phone b{
+	font-size: 16px;
+}
 .top-nav li a:hover, .top-nav li.active-item a {
 	background: none repeat scroll 0 0 #00283a;
 	border-top: 2px solid #92c500;
@@ -108,7 +111,7 @@ p.logo strong {
 }
 #carousel .text {
 	position: absolute;
-	top: 40%;
+	top: 30%;
 	z-index: 10;
 }
 .item {
@@ -312,7 +315,7 @@ h2.section-title:after {
 }
 h2.section-title {
 	color: #00283a;
-	font-size: 3.8em;
+	font-size: 3em;
 	font-weight: 700;
 	letter-spacing: -1px;
 	margin: 0 0 1.25em;

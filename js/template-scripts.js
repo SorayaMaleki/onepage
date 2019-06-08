@@ -34,4 +34,4 @@ jQuery(document).ready(function($) {
               .end().filter("[href=#" + id + "]").parent().addClass("active-item");
       }
   });
-});  
+});
