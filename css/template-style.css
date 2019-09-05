@@ -1,7 +1,7 @@
 a.white-btn {
-	border: 1px solid #fff;
+	border: 1px solid #06283a;
 	border-radius: 3px;
-	color: #fff;
+	color: #06283a;
 	display: block;
 	font-size: 0.85em;
 	margin-top: 1.25em;
@@ -16,9 +16,9 @@ a.white-btn:hover {
 	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
 }
 a.color-btn, form.customform button.color-btn {
-    background: #6f960a;
+    background: #fff;
     border-radius: 3px;
-    color: #ffffff;
+    color: #555;
     display: block;
     font-size: 0.85em;
     padding: 0.625em 1.25em;
@@ -29,20 +29,21 @@ a.color-btn, form.customform button.color-btn {
     -webkit-transition: all 0.20s linear 0s;
     max-width: 150px;
     margin: 0 auto;
+		border: 1px solid #454545;
 }
 a.color-btn:hover, form.customform button.color-btn:hover {
-	border: 1px solid #92c500;
-	color: #92c500;
+	backgrobackground: #454545a6;
+	color: white;
 }
 #topbar {
-	background: none repeat scroll 0 0 #012232;
+	background: none repeat scroll 0 0 #04508e;
 	border-bottom: 1px solid #001925;
 	padding: 0.3125em 0;
 }
 #topbar p {
 	color: #fff;
 	font-size: 0.75em;
-	opacity: 0.5;
+	opacity: 0.7;
 	position: relative;
 	top: 2px;
 	text-align: right;
@@ -67,7 +68,11 @@ a.color-btn:hover, form.customform button.color-btn:hover {
 	opacity: 1;
 }
 nav {
-	background: none repeat scroll 0 0 #00283a;
+	background: none repeat scroll 0 0 #fff;
+	position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #06508e;
 }
 header {
 	border-bottom: 4px solid rgba(0, 40, 58, 0.53);
@@ -83,16 +88,16 @@ p.logo {
 	text-transform: uppercase;
 	top: 12px;
 	text-align: right;
+	/* margin-top: 17px; */
 }
 p.logo img {
-	width: 150px;
+	width: 250px;
 }
 .top-nav li a {
-	border-top: 2px solid #00283a;
-	color: #fff;
+	color: #04508e;
 	font-size: 0.95em;
 	font-weight: 600;
-	padding: 2.1em 1.5em 2.5em;
+	padding: 1.1em 1.5em 1.1em;
 	text-transform: uppercase;
 	transition: all 0.20s linear 0s;
 	-o-transition: all 0.20s linear 0s;
@@ -104,9 +109,9 @@ p.logo img {
 	font-size: 16px;
 }
 .top-nav li a:hover, .top-nav li.active-item a {
-	background: none repeat scroll 0 0 #00283a;
-	border-top: 2px solid #92c500;
-	color: #92c500;
+	background: none repeat scroll 0 0 #fff;
+	border-top: 3px solid #95bad4;
+	color: #95bad4;
 	position: relative;
 }
 #carousel .text {
@@ -122,11 +127,12 @@ p.logo img {
 	background: none repeat scroll 0 0 #00283a;
 	cursor: pointer;
 	float: left;
-	height: 30px;
-	line-height: 30px;
+	height: 4vw;
+	line-height: 4vw;
 	margin-right: 1px;
 	text-align: center;
-	width: 30px;
+	width: 4vw;
+	font-size: 3vw;
 }
 #carousel .text h2 {
 	background: none repeat scroll 0 0 rgba(146, 197, 0, 0.8);
@@ -151,7 +157,7 @@ p.logo img {
     text-align: center;
 }
 #carousel .owl-dots {
-	background: none repeat scroll 0 0 rgba(0, 40, 58, 0.53);
+	/*background:none repeat scroll 0 0 #04508e;*/
 	bottom: 0;
 	margin: 0;
 	padding: 0.625em 0;
@@ -159,44 +165,57 @@ p.logo img {
 	width: 100%;
 }
 .owl-carousel.owl-theme .owl-dot span {
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-	border: 3px solid rgba(0, 40, 58, 0.57);
-	height: 18px;
-	margin: 0 0.3125em;
+	/*background: none repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+	border: 2px solid rgba(69, 69, 69, 0.47);
+	height: 2px;
+	margin: 0 0.1em;
 	opacity: 1;
-	width: 18px;
+	width: 45px;
+	border-radius: 0;
 }
 .owl-carousel.owl-theme .owl-dot.active span, .owl-carousel.owl-theme .owl-dot:hover span {
-	background: none repeat scroll 0 0 #92c500;
+	background: none repeat scroll 0 0 #454545;
+	border: 2px solid #454545;
 }
 #first-block {
-	background: none repeat scroll 0 0 #00283a;
-	padding: 3em 2em;
+	background: none repeat scroll 0 0 #fff;
+	padding: 2em 2em;
 	text-align: center;
 }
-#first-block h1 {
+#first-block>.line >div {
 	color: #fff;
-	font-size: 2em;
+	font-size: 0.85em;
 	font-weight: 300;
 	margin-top: 0;
+	 padding: 35px;
+	min-height: 220px;
 }
-#first-block p {
-	color: #6c7c84;
-	font-size: 0.85em;
+
+#first-block>.line >div>span {
+ color: #fff;
+ font-size: 25px;
+ font-weight: bold;
+
+}
+#first-block>.line >div h6{
+	color: white;
 }
 #features {
 	background: none repeat scroll 0 0 #fff;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-	padding: 6em 2em;
+	padding: 4em 2em;
 	position: relative;
 	text-align: center;
 	z-index: 2;
 }
+#features>line>div {
+	padding: 0 20px;
+}
 #features i {
-	background: none repeat scroll 0 0 #92c500;
+	background: none repeat scroll 0 0 #05508e;
 	border-radius: 100px;
 	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3) inset;
-	color: #fff;
+	color: #ffffff;
 	display: inline-block;
 	font-size: 2em;
 	height: 100px;
@@ -214,9 +233,11 @@ p.logo img {
 	color: #777;
 	font-size: 0.85em;
 	line-height: 1.5em;
+	text-align: justify;
+direction: rtl;
 }
 #about-us {
-	background: none repeat scroll 0 0 #00283a;
+	background: none repeat scroll 0 0 #fff;
 	clear: both;
     text-align: right;
     direction: rtl;
@@ -230,7 +251,7 @@ p.logo img {
 	visibility: hidden;
 }
 #about-us article {
-	padding:6em 4em;
+	padding:6em 1em;
 }
 article h2 {
 	font-size: 4em;
@@ -240,7 +261,7 @@ article h2 {
 	margin: 0 0 0.625em 0
 }
 article h1, article h2, article h3, article h4, article h5, article h6 {
-	color: #fff;
+	color: #06283a;
 }
 .media-container {
   overflow: hidden;
@@ -253,7 +274,7 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
   width: auto;
 }
 article p, article li {
-	color: #fff;
+	color: #06283a;
 	font-size: 0.85em;
 	opacity: 0.7;
     text-align: justify;
@@ -281,17 +302,19 @@ article ul li:before {
 	width: 20px;
 }
 .about-us-icons i {
-	border: 2px solid #92c500;
+	border: 2px solid #05508e;
 	border-radius: 100px;
-	color: #92c500;
+	color: #ffffff;
 	display: block;
-	float:right;
-	font-size: 1.6em;
-	height: 35px;
-	line-height: 35px;
+	float: right;
+	font-size: 3em;
+	height: 55px;
+	line-height: 55px;
 	margin-left: 0.4em;
 	text-align: center;
-	width: 35px;
+	width: 55px;
+	margin-bottom: 20px;
+	background: #05508e;
 
 }
 .about-us-icons {
@@ -303,6 +326,7 @@ article ul li:before {
     color: #616161;
     font-size: .8em;
     padding: 5px;
+		height: 120px;
 }
 h2.section-title:after {
 	background: #dedede none repeat scroll 0 0;
@@ -342,7 +366,7 @@ h2.section-title {
 	min-height: 262px;
 }
 .our-work-text {
-	background: rgba(0, 40, 58, 0.82) none repeat scroll 0 0;
+	background: rgba(149, 186, 212, 0.45) none repeat scroll 0 0;
 	bottom: 0;
 	display: block;
 	left: 0;
@@ -363,7 +387,7 @@ h2.section-title {
 	opacity: 1;
 }
 .our-work-text h4 {
-	color: #6f9600;
+	color: #06508e;
 	font-size: 1em;
 	font-weight: 600;
 }
@@ -381,7 +405,7 @@ h2.section-title {
 	display: table;
 }
 a.tab-label, a.tab-label:link, a.tab-label:visited {
-	background: #00283a none repeat scroll 0 0;
+	background: #05508e none repeat scroll 0 0;
 	color: #fff;
 	display: block;
 	font-size: 1em;
@@ -392,18 +416,19 @@ a.tab-label, a.tab-label:link, a.tab-label:visited {
 	-moz-transition: all 0.20s linear 0s;
 	-webkit-transition: all 0.20s linear 0s;
 	float: right;
+    text-align: center;
 }
 a.tab-label:hover, a.tab-label.active-btn {
-	background: #92c500;
+	background: #95bad4;
 	color: #fff;
 }
 #services {
-	background: #6f9600 none repeat scroll 0 0;
+	background: #fff none repeat scroll 0 0;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 	padding: 3em 2em;
 }
 #services h2 {
-	color: #fff;
+	color: #06283a;
 	margin: 0 0 .25em;
 }
 #services .margin>div{
@@ -412,18 +437,20 @@ a.tab-label:hover, a.tab-label.active-btn {
 #services h2.section-title:after {
 	background: #fff none repeat scroll 0 0;
 }
+#services .line>div{
+    display: block;
+    overflow: auto;
+}
 #services i {
-	border:1px dotted #fff;
-	border-radius: 80px;
-	color: #fff;
-	display:inline-block;
-	/*float: right;*/
-	font-size: .8em;
-	height: 20px;
-	line-height: 20px;
-	text-align: center;
-	width: 20px;
-    margin: 0 auto;
+	background: #05508e00 none repeat scroll 0 0;
+	    border-radius: 30px;
+	    color: #05508e;
+	    display: inline-block;
+	    line-height: 30px;
+	    margin: 0;
+	    text-align: center;
+	    width: 30px;
+	font-weight: bold;
 }
 .service-text {
 	display: table;
@@ -433,18 +460,20 @@ a.tab-label:hover, a.tab-label.active-btn {
     direction: rtl;
 }
 #services h3 {
-    color: #fff;
-    font-size: 1em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    background:#06283ae6;
-    padding: 7px 0;
-    border-radius: 4px;
+	color: #05508e;
+	    font-size: 1em;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    text-align: center;
+	    background: #95bad4;
+	    padding: 5px 0;
+			border-radius: 4px;
 }
 #services p {
-	color: #fff;
+	color: #1d3d4e;
 	font-size: 0.8em;
+	text-align: justify;
+	padding: 0 20px;
 }
 #latest-news {
 	background: #f3f3f3 none repeat scroll 0 0;
@@ -454,9 +483,9 @@ a.tab-label:hover, a.tab-label.active-btn {
 	z-index: 3;
 }
 .news-date {
-	background: #6f9600 none repeat scroll 0 0;
+	background: #95bad4 none repeat scroll 0 0;
 	clear: both;
-	color: #fff;
+	color: #05508e;
 	display: block;
 	float: none;
 	height: 130px;
@@ -483,37 +512,51 @@ a.tab-label:hover, a.tab-label.active-btn {
 .news-text p {
 	color: #777;
 	font-size: 0.85em;
+	text-align: justify;
+direction: rtl;
 }
 #contact {
 	background: none repeat scroll 0 0 #fff;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-	padding: 6em 2em;
+	padding: 2em;
 	position: relative;
 	z-index: 2;
     direction: rtl;
+	background-image: url("../img/contact.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#contact address div{
+	font-size: 0.85em;
+	width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+	width: -moz-max-content;    /* Firefox/Gecko */
+	width: -webkit-max-content; /* Chrome */
 }
 #contact input, #contact textarea {
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.81);
 	border-radius: 3px;
     text-align: right;
+	border: 1px solid #454545;
+	color: #454545;
 }
 form.customform button.color-btn {
 	height: auto;
 	margin-top: 0;
 }
 #contact h2 {
-	margin: 0 0 1.25em;
+	margin: 0 0 0.25em;
 }
 #contact h3 {
-    color: #92c500;
-    font-size: 1em;
-    font-weight: 600;
-    margin: 0 0 0.625em;
-    text-transform: uppercase;
-    text-align: center;
-    background: #06283ae6;
-    border-radius: 4px;
-    padding: 10px;
+	color: #fff;
+	    font-size: 1em;
+	    font-weight: 600;
+	    margin: 0 0 0.625em;
+	    text-transform: uppercase;
+	    text-align: center;
+	    background: #454545;
+	    border-radius: 4px;
+	    padding: 10px;
 }
 #contact p {
 	font-size: 0.85em;
@@ -524,14 +567,19 @@ form.customform button.color-btn {
 	font-weight: 700;
 }
 #contact i {
-    background: #06283a none repeat scroll 0 0;
-    border-radius: 30px;
-    color: #ffffff;
-    display: inline-block;
-    line-height: 26px;
-    margin: 0.625em;
-    text-align: center;
-    width: 26px;
+	background: #05508e none repeat scroll 0 0;
+	border-radius: 30px;
+	color: #ffffff;
+	display: inline-block;
+	line-height: 40px;
+	margin: 0.2em;
+	text-align: center;
+	width: 40px;
+}
+#contact .margin{
+	background: rgba(255, 255, 255, 0.8);
+	padding: 10px;
+	border-radius: 5px;
 }
 #map-block {
   filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
@@ -540,12 +588,12 @@ form.customform button.color-btn {
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
 }
 footer {
-	background: none repeat scroll 0 0 #00283a;
+	background: none repeat scroll 0 0 #04508e;
 	padding: 2em 0;
     direction: rtl;
 }
 footer p, footer a:visited, footer a, footer a:hover {
-	color: #6c7c84;
+	color: #fff;
 	font-size: 0.8em;
     display: block;
     width: 100%;
@@ -553,12 +601,17 @@ footer p, footer a:visited, footer a, footer a:hover {
     margin-top: 10px;
 }
 footer a{
-    color:#92c500!important; ;
+    color:#fff!important; ;
 }
 @media screen and (max-width: 768px) {
   .top-nav li a {
-  	background: #05374e none repeat scroll 0 0;
+  	background: #05508e none repeat scroll 0 0;
+		color: white;
   }
+	top-nav li a:hover, .top-nav li.active-item a {
+    border: 1px solid  #05508e!important;
+    color: #05508e!important;
+}
   header {
     position: relative;
   }
